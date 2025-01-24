@@ -7,7 +7,7 @@ except:
   print('File cannot be opened:', fname)
   exit()
 for line in fhand:
-  if(line.find("X-DSPAM-Confidence:")>=0): #fare domanda se cambia qualcosa da = e >=
+  if(line.find("X-DSPAM-Confidence:")>=0): 
     indice=line.find(":")
     media+=float(line[indice+1:len(line)])
     cont+=1
