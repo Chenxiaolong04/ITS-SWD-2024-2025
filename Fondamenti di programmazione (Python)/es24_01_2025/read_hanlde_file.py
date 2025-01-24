@@ -32,9 +32,7 @@ file.write(str(count_stringa)+'\n')
 file.write(str(concatenazione))
 file.write(str(somma)+'\n')
 file.write(str(somma_float)+'\n')
-
 file.write('la media float e:')
 file.write(str(media_float)+'\n')
-
 file.write(str(media_interi)+'\n')
 file.close
