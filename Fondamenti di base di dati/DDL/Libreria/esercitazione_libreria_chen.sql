@@ -78,10 +78,12 @@ FROM libro
 JOIN autore_libro ON libro.id = autore_libro.libro_id
 GROUP BY libro.id
 HAVING COUNT(autore_libro.autore_id) > 1;
-select *
-from autore_libro;
--- 20. Contare il numero di libri per autore
 
+-- 20. Contare il numero di libri per autore
+SELECT a.nome, a.cognome, COUNT(al.libro_id) AS numero_libri
+FROM autore a
+JOIN autore_libro al ON a.id = al.autore_id
+GROUP BY a.id;
 -- 21. Ottenere la somma totale del prezzo di tutti i libri
 select sum(prezzo) as prezzo_totale
 from libro;
@@ -93,10 +95,13 @@ where prezzo between 10 and 20;
 select avg(prezzo),editore_id
 from libro
 group by editore_id;
-
-
 -- 24. Trovare gli autori con più libri pubblicati da editori diversi
-
+SELECT a.nome, a.cognome, COUNT(DISTINCT l.editore_id) AS numero_editori
+FROM autore a
+JOIN autore_libro al ON a.id = al.autore_id
+JOIN libro l ON al.libro_id = l.id
+GROUP BY a.id
+HAVING COUNT(DISTINCT l.editore_id) > 1;
 -- 25. Trovare i libri con il prezzo più alto per ogni editore
 select max(prezzo),editore_id
 from libro
@@ -107,9 +112,26 @@ from libro
 order by prezzo desc
 limit 5;
 -- 27. Contare il numero di libri pubblicati da ciascun editore con più di 3 libri
-
+SELECT e.nome AS editore, COUNT(l.id) AS numero_libri
+FROM libro l
+JOIN editore e ON l.editore_id = e.id
+GROUP BY e.nome
+HAVING COUNT(l.id) > 3;
 -- 28. Selezionare il nome degli editori che hanno pubblicato almeno un libro con più di 500 pagine
-
+SELECT DISTINCT e.nome
+FROM editore e
+JOIN libro l ON e.id = l.editore_id
+WHERE l.pagine > 500;
 -- 29. Trovare gli autori che hanno scritto libri pubblicati da più di un editore
-
+SELECT a.nome, a.cognome, COUNT(DISTINCT l.editore_id) AS numero_editori
+FROM autore a
+JOIN autore_libro al ON a.id = al.autore_id
+JOIN libro l ON al.libro_id = l.id
+GROUP BY a.id
+HAVING COUNT(DISTINCT l.editore_id) > 1;
 -- 30. Contare il numero di libri per ogni autore con più di 1 libro
+SELECT a.nome, a.cognome, COUNT(al.libro_id) AS numero_libri
+FROM autore a
+JOIN autore_libro al ON a.id = al.autore_id
+GROUP BY a.id
+HAVING COUNT(al.libro_id) > 1;
