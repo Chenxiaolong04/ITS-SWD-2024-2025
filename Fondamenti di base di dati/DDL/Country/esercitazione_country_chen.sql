@@ -16,27 +16,29 @@ from `country-data`
 where gdpp >10000
 order by gdpp desc;
 -- 5. Trovare i paesi con un tasso di mortalità infantile inferiore a 20
-
+SELECT country, child_mort FROM country_data WHERE child_mort < 20;
 -- 6. Ordinare i paesi per reddito pro capite in ordine decrescente
-
+SELECT country, income FROM country_data ORDER BY income DESC;
 -- 7. Ordinare i paesi per aspettativa di vita in ordine crescente
-
+SELECT country, life_expec FROM country_data ORDER BY life_expec ASC;
 -- 8. Selezionare i paesi con un tasso di fertilità superiore a 5
-
+SELECT country, total_fer FROM country_data WHERE total_fer > 5;
 -- 9. Trovare i paesi con una spesa sanitaria superiore al 10% del PIL
 select country, health
 from `country-data`
 where health > 10;
 -- 10. Selezionare i paesi con un'inflazione negativa (deflazione)
-
+SELECT country, inflation FROM country_data WHERE inflation < 0;
 -- 11. Trovare i paesi con esportazioni che superano il 50% del PIL
 select country, exports
 from `country-data`
 where exports > 50;
 -- 12. Trovare i paesi con importazioni maggiori delle esportazioni
-
+SELECT country, imports, exports
+ FROM country_data
+ WHERE imports > exports;
 -- 13. Selezionare i paesi con un PIL pro capite compreso tra 5.000 e 10.000
-
+SELECT country, gdpp FROM country_data WHERE gdpp BETWEEN 5000 AND 10000;
 -- 14. Trovare i paesi con un tasso di fertilità inferiore a 2 e un'aspettativa di vita superiore a 75 anni
 SELECT country, total_fer, life_expec
 FROM `country-data`
@@ -48,15 +50,15 @@ WHERE
     );
 
 -- 15. Selezionare i paesi con un tasso di mortalità infantile maggiore di 100
-
+SELECT country, child_mort FROM country_data WHERE child_mort > 100;
 -- 16. Trovare i paesi con reddito pro capite maggiore di 15.000 e inflazione inferiore a 5%
-
+SELECT country, income, inflation FROM country_data WHERE income > 15000 AND inflation < 5;
 -- 17. Ordinare i paesi per spesa sanitaria in ordine decrescente
 select country, health
 from `country-data`
 order by health desc;
 -- 18. Selezionare i paesi con un PIL pro capite inferiore a 2.000
-
+SELECT country, gdpp FROM country_data WHERE gdpp < 2000;
 -- 19. Trovare i paesi con esportazioni e importazioni combinate superiori al 90% del PIL
 select country, (exports + imports) as total
 from `country-data`
@@ -86,9 +88,14 @@ select count(country)
 from  `country-data`
 where inflation<0;
 -- 25. Trovare i 5 paesi con il PIL pro capite (gdpp) più alto
-
+SELECT country, gdpp 
+FROM country_data 
+ORDER BY gdpp DESC 
+LIMIT 5;
 -- 26. Calcolare la somma delle esportazioni e delle importazioni per ciascun paese
-
+SELECT country, (exports + imports) AS somma_esportazione 
+FROM country_data 
+ORDER BY total_trade DESC;
 -- 27. Trovare i paesi dove il totale delle esportazioni è almeno il doppio delle importazioni
 select country, exports,imports
 from `country-data`
@@ -99,5 +106,11 @@ from  `country-data`
 group by range_eta 
 order by range_eta;
 -- 29. Trovare i paesi con un tasso di mortalità infantile superiore alla media globale
-
+SELECT country, child_mort 
+FROM country_data 
+WHERE child_mort > (SELECT AVG(child_mort) FROM country_data);
 -- 30. Trovare i paesi con il massimo tasso di mortalità infantile in ogni fascia di reddito
+SELECT income, country, MAX(child_mort) AS max_child_mort 
+FROM country_data 
+GROUP BY income 
+ORDER BY income;
