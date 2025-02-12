@@ -70,7 +70,7 @@ INSERT INTO Vendite  VALUES
 ('V009', 'P009', 4, 24.99, 99.96),
 ('V010', 'P010', 2, 199.99, 399.98);
 
-INSERT INTO FornitoriProdotti VALUES
+INSERT INTO fornitori_prodotti VALUES
 ('F001', 'P001', 100),
 ('F002', 'P002', 200),
 ('F003', 'P003', 150),
@@ -82,7 +82,7 @@ INSERT INTO FornitoriProdotti VALUES
 ('F009', 'P009', 90),
 ('F010', 'P010', 60);
 
-INSERT INTO OrdiniTemp VALUES
+INSERT INTO ordini_temp VALUES
 ('T001', 'C001', '2024-01-21'),
 ('T002', 'C002', '2024-01-22'),
 ('T003', 'C003', '2024-01-23'),
