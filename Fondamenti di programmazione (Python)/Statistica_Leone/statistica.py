@@ -18,6 +18,7 @@ with open("output.txt", "r") as file:
     nomi = dict()
     #lettura del file riga per riga
     for riga in righe:
+        riga=riga.strip(" ")    # serve per rimuovere tutti i spazzi e non solo 1
         #controllo dell'utente
         if riga.startswith("Sondaggio di:"):
             totale_persone += 1
