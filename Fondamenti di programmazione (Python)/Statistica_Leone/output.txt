@@ -1,0 +1,64 @@
+Sondaggio di: Mario
+Eta: 30
+Altezza: 1.75
+Sposato: si
+Lista delle Materie: matematica, fisica
+
+Sondaggio di: Giovanni
+Eta: 25
+Altezza: 1.80
+Sposato: no
+Lista delle Materie: storia, geografia
+
+Sondaggio di: Lucia
+Eta: 35
+Altezza: 1.65
+Sposato: si
+Lista delle Materie: italiano, storia, matematica
+
+Sondaggio di: Marco
+Eta: 28
+Altezza: 1.85
+Sposato: no
+Lista delle Materie: matematica, chimica
+
+Sondaggio di: Anna
+Eta: 22
+Altezza: 1.60
+Sposato: si
+Lista delle Materie: fisica, italiano
+
+Sondaggio di: Luigi
+Eta: 40
+Altezza: 1.78
+Sposato: no
+Lista delle Materie: storia, chimica
+
+Sondaggio di: Sara
+Eta: 26
+Altezza: 1.70
+Sposato: si
+Lista delle Materie: matematica, geografia, italiano
+
+Sondaggio di: Giuseppe
+Eta: 33
+Altezza: 1.90
+Sposato: no
+Lista delle Materie: geografia, storia
+
+Sondaggio di: Martina
+Eta: 27
+Altezza: 1.68
+Sposato: si
+Lista delle Materie: italiano, chimica
+
+Sondaggio di: Fabio
+Eta: 29
+Altezza: 1.77
+Sposato: no
+Lista delle Materie: matematica, fisica
+Sondaggio di: Xiaolong
+Eta: 10000
+Altezza: 1000000.0
+Sposato: si
+Lista delle Materie: ['francese']
