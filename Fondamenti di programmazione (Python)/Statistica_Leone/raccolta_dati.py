@@ -1,9 +1,9 @@
 '''
 1 creazione del file e poi ogni volta fare append
 2 fare un ciclo per ogni volta che un utente inserisce il dato con all'interno un try exept cosi se non valido torna indietro e lo fa eseguire nuovamene
-3 dopo aver ottenuto tutti i dati inseriti scriverli sul file di testo un una piccola parte di desto davanti prima di salvare la variabile cosi è piu facile ritrovare il dato
+3 dopo aver ottenuto tutti i dati inseriti scriverli sul file di testo con una piccola parte di testo davanti prima di salvare la variabile cosi è piu facile ritrovare il dato
 '''
-with open("output.txt", "a") as file:
+with open("output.txt", "a") as file:#apre e chiude in automatico il file
     nome = input("Inserisci il tuo nome: ")
     while nome=='':
         nome = input("Inserisci il tuo nome nuovamente: ")
@@ -15,7 +15,7 @@ with open("output.txt", "a") as file:
                 continue
             break
         except:
-            print("Errore: inserisci un numero intero valido per l'età.")
+            print("Errore: inserisci un numero valido per l'età.")
     while True:
         try:
             altezza = float(input("Quanto pensi che sia alto (in metri)? "))
@@ -24,7 +24,7 @@ with open("output.txt", "a") as file:
                 continue
             break
         except:
-            print("Errore: inserisci un numero decimale valido per l'altezza.")
+            print("Errore: inserisci un numero valido per l'altezza.")
     while True:
         sposato = input("Pensi che sia sposato? (si/no): ").strip().lower()
         if sposato == "si" or sposato == "no":
