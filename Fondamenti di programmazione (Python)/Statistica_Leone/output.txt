@@ -1,119 +1,20 @@
-Sondaggio di: Mario
+Sondaggio di: P1
+Eta: 2
+Altezza: 2.0
+Sposato: si
+Lista delle Materie: ['italiano', 'francese', 'python']
+Sondaggio di: P2
+Eta: 3
+Altezza: 4.0
+Sposato: no
+Lista delle Materie: ['python']
+Sondaggio di: P1
+Eta: 4
+Altezza: 4.0
+Sposato: si
+Lista delle Materie: ['python']
+Sondaggio di: Michele marco leone
 Eta: 30
-Altezza: 1.75
-Sposato: si
-Lista delle Materie: matematica, fisica
-
-Sondaggio di: Giovanni
-Eta: 25
-Altezza: 1.80
+Altezza: 0.75
 Sposato: no
-Lista delle Materie: storia, geografia
-
-Sondaggio di: Lucia
-Eta: 35
-Altezza: 1.65
-Sposato: si
-Lista delle Materie: italiano, storia, matematica
-
-Sondaggio di: Mario
-Eta: 40
-Altezza: 1.70
-Sposato: no
-Lista delle Materie: chimica, biologia
-
-Sondaggio di: Anna
-Eta: 28
-Altezza: 1.60
-Sposato: no
-Lista delle Materie: storia, matematica
-
-Sondaggio di: Marco
-Eta: 22
-Altezza: 1.85
-Sposato: si
-Lista delle Materie: geografia, arte
-
-Sondaggio di: Giovanni
-Eta: 33
-Altezza: 1.78
-Sposato: si
-Lista delle Materie: letteratura, matematica
-
-Sondaggio di: Luca
-Eta: 29
-Altezza: 1.72
-Sposato: no
-Lista delle Materie: fisica, chimica
-
-Sondaggio di: Francesca
-Eta: 32
-Altezza: 1.68
-Sposato: si
-Lista delle Materie: biologia, inglese
-
-Sondaggio di: Fabio
-Eta: 26
-Altezza: 1.75
-Sposato: no
-Lista delle Materie: matematica, chimica
-
-Sondaggio di: Laura
-Eta: 23
-Altezza: 1.70
-Sposato: si
-Lista delle Materie: storia, filosofia
-
-Sondaggio di: Michele
-Eta: 36
-Altezza: 1.80
-Sposato: si
-Lista delle Materie: matematica, fisica
-
-Sondaggio di: Antonio
-Eta: 27
-Altezza: 1.85
-Sposato: no
-Lista delle Materie: storia, geografia
-
-Sondaggio di: Alessandra
-Eta: 31
-Altezza: 1.65
-Sposato: si
-Lista delle Materie: italiano, matematica
-
-Sondaggio di: Marta
-Eta: 38
-Altezza: 1.62
-Sposato: no
-Lista delle Materie: chimica, biologia
-
-Sondaggio di: Giuseppe
-Eta: 24
-Altezza: 1.82
-Sposato: si
-Lista delle Materie: matematica, fisica
-
-Sondaggio di: Valeria
-Eta: 27
-Altezza: 1.70
-Sposato: no
-Lista delle Materie: storia, arte
-
-Sondaggio di: Stefano
-Eta: 40
-Altezza: 1.78
-Sposato: si
-Lista delle Materie: filosofia, geografia
-
-Sondaggio di: Roberta
-Eta: 34
-Altezza: 1.73
-Sposato: no
-Lista delle Materie: matematica, inglese
-
-Sondaggio di: Daniela
-Eta: 29
-Altezza: 1.65
-Sposato: si
-Lista delle Materie: chimica, matematica
+Lista delle Materie: ['']
