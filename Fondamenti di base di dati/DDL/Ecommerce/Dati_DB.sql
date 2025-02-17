@@ -34,7 +34,7 @@ INSERT INTO Clienti VALUES
 ('C009', 'Alessio Rosa', 'alessio.rosa@example.com', '2024-01-09'),
 ('C010', 'Sara Arancio', 'sara.arancio@example.com', '2024-01-10');
 
-INSERT INTO ProdottiArchivio VALUES
+INSERT INTO prodotti_archivio VALUES
 ('A001', 'Maglietta Vintage', 'Rosso', 'M'),
 ('A002', 'Pantaloni Retrò', 'Blu', 'L'),
 ('A003', 'Scarpe Classiche', 'Nero', '42'),
