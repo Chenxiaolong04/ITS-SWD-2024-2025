@@ -2,6 +2,7 @@
 1 creazione del file e poi ogni volta fare append
 2 fare un ciclo per ogni volta che un utente inserisce il dato con all'interno un try exept cosi se non valido torna indietro e lo fa eseguire nuovamene
 3 dopo aver ottenuto tutti i dati inseriti scriverli sul file di testo con una piccola parte di testo davanti prima di salvare la variabile cosi è piu facile ritrovare il dato
+# sarebbe meglio prendere prima i dati e poi aprire il file per salvare
 '''
 with open("output.txt", "a") as file:#apre e chiude in automatico il file
     nome = input("Inserisci il tuo nome: ")
