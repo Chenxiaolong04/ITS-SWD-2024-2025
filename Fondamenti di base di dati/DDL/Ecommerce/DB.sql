@@ -1,4 +1,6 @@
--- create database ecommerce;
+drop database if exists ecommerce;
+create database ecommerce;
+use ecommerce;
 CREATE TABLE prodotti (
     codice_prodotto VARCHAR(10) PRIMARY KEY,       -- Codice prodotto
     nome_prodotto VARCHAR(100) NOT NULL,        -- Nome del prodotto
