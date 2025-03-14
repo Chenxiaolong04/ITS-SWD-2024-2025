@@ -29,10 +29,10 @@ class clienti:
         conn.commit()
         cur.close()
 class negozio:
-    def vendite(self,id_cliente,id_prodotto,quantita):
+    def vendite(self,id_cliente,id_prodotto,quantita,nome):
         cur.execute('''
-            insert into vendite(id_cliente,id_prodotto,quantita)
-            values(?,?,?)
-        ''',(id_cliente,id_prodotto,quantita))
+            insert into vendite(id_cliente,id_prodotto,quantita,nome)
+            values(?,?,?,?) 
+        ''',(id_cliente,id_prodotto,quantita,nome))
         conn.commit()
         cur.close()

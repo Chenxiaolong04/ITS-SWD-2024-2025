@@ -24,7 +24,10 @@ id_vendita integer primary key autoincrement,
 id_cliente integer,
 id_prodotto integer,
 quantita integer,
+nome text,       
+data_vendita date default current_date,     
 foreign key(id_cliente) references clienti(id_cliente),
+
 foreign key(id_prodotto) references prodotti(id_prodotto)
 )''')
 conn.commit()
