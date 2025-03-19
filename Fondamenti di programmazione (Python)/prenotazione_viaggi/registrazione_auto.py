@@ -3,7 +3,7 @@ from DatabaseUtilities import *
 import string
 import re
 conn,cur=aperturaConnessione()
-class auto:
+class Auto:
     def registrazione_noleggio(nome,targa,durata):
         cur.execute('''
             insert into registrazione_auto(nome,targa,durata)

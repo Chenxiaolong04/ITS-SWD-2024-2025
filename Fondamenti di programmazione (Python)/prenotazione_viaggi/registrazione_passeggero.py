@@ -3,7 +3,7 @@ from DatabaseUtilities import *
 import string
 import re
 conn,cur=aperturaConnessione()
-class passeggero:
+class Passeggero:
     def registrazione_passeggero(self,nome,cognome):
         cur.execute('''
             insert into registrazione_passeggero(nome,cognome)

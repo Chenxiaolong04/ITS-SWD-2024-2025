@@ -29,6 +29,8 @@ while True:
                 1.Registrazione hotel
                 2.Prenotazione via
             ''')
+            if scelta=="1":
+                Hotel().registrazione_hotel(Hotel().inputNome(),Hotel().inputVia())
     elif scelta=="3":
         while True:
             scelta=input('''
@@ -36,10 +38,12 @@ while True:
                 1.Registrazione auto
                 2.Prenotazione auto
             ''')
+            if scelta=="1":
+                Auto().registrazione_noleggio(Auto().inputNome(),Auto().inputTarga())
     elif scelta=="4":
         #nome=passeggero().inputNome()
         #cognome=passeggero().inputCognome()
-        passeggero().registrazione_passeggero(passeggero().inputNome(),passeggero().inputCognome())
+        Passeggero().registrazione_passeggero(Passeggero().inputNome(),Passeggero().inputCognome())
     elif scelta=="5":
         print("Uscita dal programma")
         break
