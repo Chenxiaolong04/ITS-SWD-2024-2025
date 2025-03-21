@@ -1,0 +1,43 @@
+Un compilatore è un software che trasforma il codice scritto da un programmatore in un linguaggio comprensibile alla CPU siccome comprende solo il linguaggio macchina cioè numeri composti da 0/1.
+
+Alcuni compilatori trasformano il codice sorgente trasformano il codice in linguaggio assembly e altri direttamente in linguaggio macchina.
+
+Funzionamento di un compilatore
+
+1. **Scrittura del codice sorgente** – Creato in un editor con estensione specifica (es. `.c`).
+2. **Processare** – Il codice viene mandato alla CPU per essere espanso
+3. **Compilazione** – Il codice viene mandato al compilatore per essere poi compilato.
+4. Conversione– Trasformazione in codice oggetto.
+5. **Linking** – Collegamento con librerie e altre parti del codice.
+6. **Esecuzione** – Generazione ed esecuzione del file eseguibile.
+
+Pro
+
+- Più veloce rispetto all’interpretato perché è già stato compilato e poi viene creata un file eseguibile che può essere eseguito quando si vuole.
+- Il tuo cliente non ha bisogno di installare un software per eseguire il file eseguibile
+
+Contro
+
+- Ci sono alcune volte che il file quando viene eseguito da un’altra parte potrebbe dare problemi perché è ottimizzato sul computer in cui viene eseguito la prima volta
+- Occupa più memoria perché viene creato un file e possiamo eseguire il codice solo con quel file creato
+- Rende difficile trovare l’errore e correggerlo perché viene eseguito tutto il codice e poi fa errore
+
+Interprete
+
+Il software esegue riga per riga convertendolo in binario se viene trovato un errore si ferma subito e poi non fa andare avanti fino a quando non viene risolto
+
+Funzionamento interprete
+
+1. Conversione - Il codice sorgente viene trasformato riga per riga in codice macchina
+
+Pro
+
+- Trova subito errore
+- Accesso facilitato per ma modifica del codice
+- Qualunque macchina che ha il codice sorgente può eseguire il programma
+- Occupa meno memoria perché non crea altri file
+
+Contro
+
+- Quando trova un errore viene fermato e poi ogni volta che si esegue incomincia sempre dall’inizio
+- Per modificare il codice bisogna installare un interprete per poterlo eseguire

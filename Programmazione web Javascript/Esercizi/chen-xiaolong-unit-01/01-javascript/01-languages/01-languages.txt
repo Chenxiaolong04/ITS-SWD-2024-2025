@@ -1,0 +1,14 @@
+Linguaggio compilato:
+● C
+● C++
+● Cobol
+● Fortran
+Un linguaggio di programmazione compilato ha una maggiore velocità di esecuzione per la macchina perché comprende solo
+il linguaggio macchina
+Linguaggio interpretato
+● Python
+● Javascript perché viene eseguito dal browser
+● Perl
+● BASIC
+Un linguaggio di programmazione interpretato esegue istruzioni riga per riga trasformando le righe di codice in linguaggio
+macchina se dovesse trovare un errore mentre interpreta il codice si ferma subito.

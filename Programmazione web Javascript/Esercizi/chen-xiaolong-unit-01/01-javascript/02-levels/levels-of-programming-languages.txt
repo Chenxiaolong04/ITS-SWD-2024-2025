@@ -1,0 +1,17 @@
+- Linguaggio macchina
+
+Corrisponde alla lingua madre delle macchine e ogni macchina ha il proprio linguaggio.
+
+Il linguaggio macchina è composta da una serie di numeri formati da 0 e 1 che rappresentano delle semplici operazioni
+
+- Linguaggio assembly
+
+Rendono la programmazione leggermente più semplice aggiungendo alcuni istruzioni semplici come “ADD” però questo codice per essere eseguito bisogna usare un software chiamato assembler per trasformare il codice in codice macchina comprensibile per ogni tipologia di macchina perché hanno una struttura hardware diversa
+
+- Linguaggio di alto livello
+
+Un tipo di linguaggio più semplice perché assomiglia al linguaggio parlato in inglese.
+
+Anche questo tipo di linguaggio bisogna essere tradotto in linguaggio macchina e questo avviene attraverso un compilatore o interprete.
+
+Compilato traduce il codice sorgente interamente mentre l’interpretato traduce riga per riga

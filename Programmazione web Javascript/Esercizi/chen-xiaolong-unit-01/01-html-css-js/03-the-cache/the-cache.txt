@@ -1,0 +1,5 @@
+● What does ?v=1.0 do?
+Serve per indicare al browser che deve andare a prendere un nuovo file CSS invece di usare l'ultima versione usata
+● How does the browser cache work?
+Ogni volta che si visita un sito il file usati per creare la pagina vengono scaricati e salvati nella memoria cache
+cosi la prossima volta che si ritorna alla pagina web non bisogna ricaricare tutta la pagina rendendo la connessione più veloce
