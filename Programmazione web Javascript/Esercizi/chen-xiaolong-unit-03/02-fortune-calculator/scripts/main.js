@@ -1,3 +1,11 @@
+/**
+ * Description placeholder
+ *
+ * @param {string} job 
+ * @param {string} city 
+ * @param {string} name 
+ * @param {string} kid 
+ */
 function tellFortune(job,city,name,kid){
     console.log("You will be a",job,"in",city,"and married to", name,"with", kid,"kids.")
 }

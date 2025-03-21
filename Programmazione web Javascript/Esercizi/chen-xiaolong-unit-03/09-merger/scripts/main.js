@@ -1,3 +1,10 @@
+/**
+ * Description placeholder
+ *
+ * @param {number} num1 
+ * @param {number} num2 
+ * @returns {(string | number)} 
+ */
 function merger(num1,num2){
     if(typeof(num1)=="number"&&typeof(num2)=="number")
         return num1+num2;

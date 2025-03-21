@@ -1,3 +1,10 @@
+/**
+ * Description placeholder
+ *
+ * @param {number} currentAge 
+ * @param {number} maximumAge 
+ * @param {number} quantity 
+ */
 function calculateSupply(currentAge, maximumAge, quantity) {
     console.log("You will need", (maximumAge - currentAge) * quantity * 365,"cups of coffee to last you until the age of", maximumAge);
 }

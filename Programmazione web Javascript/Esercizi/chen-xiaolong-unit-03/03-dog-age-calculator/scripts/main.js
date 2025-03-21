@@ -1,3 +1,9 @@
+/**
+ * Description placeholder
+ *
+ * @param {number} year 
+ * @param {number} [rate=7] 
+ */
 function calculateDogAge(year,rate=7){
     console.log("Your dog is",year*rate,"years old in dog years!");
 }
