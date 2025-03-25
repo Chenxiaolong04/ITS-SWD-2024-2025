@@ -6,3 +6,6 @@ def aperturaConnessione():
 def chiusura_connessione(conn, cur):
     cur.close() 
     conn.close() 
+
+
+    

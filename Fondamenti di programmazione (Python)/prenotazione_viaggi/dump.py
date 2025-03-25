@@ -35,8 +35,7 @@ cur.execute('''
     CREATE TABLE registrazione_auto(
         id_noleggio INTEGER PRIMARY KEY AUTOINCREMENT,
         nome TEXT,
-        targa TEXT,
-        durata INTEGER
+        targa TEXT
     )
 ''')
 
@@ -51,25 +50,25 @@ cur.execute('''
 # Tabelle per le prenotazioni
 cur.execute('''
     CREATE TABLE prenotazioni_volo(
-        id_prenotazione INTEGER PRIMARY KEY AUTOINCREMENT,
-        passeggero_id INTEGER,
-        volo_id INTEGER,
+        id_prenotazione_volo INTEGER PRIMARY KEY AUTOINCREMENT,
+        id_passeggero INTEGER,
+        id_volo INTEGER
     )
 ''')
 
 cur.execute('''
     CREATE TABLE prenotazioni_hotel(
-        id_prenotazione INTEGER PRIMARY KEY AUTOINCREMENT,
-        passeggero_id INTEGER,
-        hotel_id INTEGER,
+        id_prenotazione_hotel INTEGER PRIMARY KEY AUTOINCREMENT,
+        id_passeggero INTEGER,
+        id_hotel INTEGER
     )
 ''')
 
 cur.execute('''
     CREATE TABLE prenotazioni_auto(
-        id_prenotazione INTEGER PRIMARY KEY AUTOINCREMENT,
-        passeggero_id INTEGER,
-        auto_id INTEGER,
+        id_prenotazione_auto INTEGER PRIMARY KEY AUTOINCREMENT,
+        id_passeggero INTEGER,
+        id_auto INTEGER
     )
 ''')
 

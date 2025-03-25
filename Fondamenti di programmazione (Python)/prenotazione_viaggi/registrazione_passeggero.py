@@ -2,9 +2,9 @@ import sqlite3
 from DatabaseUtilities import *
 import string
 import re
-conn,cur=aperturaConnessione()
 class Passeggero:
     def registrazione_passeggero(self,nome,cognome):
+        conn,cur=aperturaConnessione()
         cur.execute('''
             insert into registrazione_passeggero(nome,cognome)
             values(?,?)
@@ -18,21 +18,23 @@ class Passeggero:
             nome=input("Inserisci nome del passeggero: ")
             nome = nome.strip()
             nome = nome.translate(str.maketrans("", "", string.punctuation))
-            if not re.search(r'\d', nome):
-                chiusura_connessione(conn,cur)
-                #print("Registrazione nome passeggero avvenuta con successo")
-                return nome
-            print("Errore: il nome non può contenere numeri, inserire nuovamente.")
-            continue
+            if nome=="":
+                print("Errore: hai inserito solo spazzi nell'input")
+                continue
+            if re.search(r'\d', nome):
+                print("Errore: il nome non può contenere numeri, inserire nuovamente.")
+                continue
+            return nome
     def inputCognome(self):
         conn,cur=aperturaConnessione()
         while True:
             cognome=input("Inserisci cognome: ")
             cognome = cognome.strip()
             cognome = cognome.translate(str.maketrans("", "", string.punctuation))
-            if not re.search(r'\d', cognome):
-                chiusura_connessione(conn,cur)
-                #print("Registrazione cognome passeggero avvenuta con successo")
-                return cognome
-            print("Errore: la cognome non può contenere numeri, inserire nuovamente.")
-            continue
+            if cognome=="":
+                print("Errore: hai inserito solo spazzi nell'input")
+                continue
+            if re.search(r'\d', cognome):
+                print("Errore: la cognome non può contenere numeri, inserire nuovamente.")
+                continue
+            return cognome
