@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: left;
+            height: 35px;
+        }
+        #anno {
+            padding-right: 35px;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Caption</caption>
+        <tr>
+            <th>Id</th>
+            <th>Titolo</th>
+            <th>Regia</th>
+            <th id="anno">Anno uscita</th>
+            <th>Genere</th>
+            <th>Piattaforma</th>
+            <td rowspan="5">Rowspan</td>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>Pirati dei caraibi - ai<br> confini del moondo</th>
+            <td>Gore Verbinski</td>
+            <td>2007</td>
+            <td>Avventura,<br>fantasy</td>
+            <td><img src="disney.jpg"></td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>The electric state</th>
+            <td>Anthony Russo,Joe <br>Russo</td>
+            <td>2025</td>
+            <td>Azione,<br>distopian sci-fi</td>
+            <td><img src="Netflix.webp"></td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>The Blues Brothers</th>
+            <td>Jhon Landis</td>
+            <td>1980</td>
+            <td>Commedia,<br>avventura</td>
+            <td><img src="now.png"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Colspan</td>
+            
+        </tr>
+        <tfoot>
+            <tr>
+              <td colspan="7">tfoot</td>
+            </tr>
+          </tfoot>
+    </table>
+    
+</body>
+</html>
