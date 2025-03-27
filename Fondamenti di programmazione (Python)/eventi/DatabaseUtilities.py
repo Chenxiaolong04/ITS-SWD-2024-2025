@@ -13,21 +13,40 @@ def inputStringaConNumero(testo):
         testo = testo.strip()
         if testo=="":
             print("Errore: hai inserito solo spazzi nell'input")
+            testo=input("Inserisci nuovamente: ")
             continue
-        return testo
+        break
+    return testo
 def inputStringaSenzaNumero(testo):
     while True:
         testo = testo.strip()
         testo = testo.translate(str.maketrans("", "", string.punctuation))
         if testo=="":
             print("Errore: hai inserito solo spazzi nell'input")
+            testo=input("Inserisci nuovamente: ")
             continue
-        return testo
+        if re.search(r'\d', testo):
+            print("Errore: hai inserito un numero nell'input")
+            testo=input("Inserisci nuovamente: ")
+            continue
+        break
+    return testo
+'''
+Funzione ricorsiva per l'input di un numero
 def inputNumero(numero):
     try:
         numero=int(numero)
         return numero
     except Exception as e:
         print(e)
-        numero=input("Inserisci un numero: ")
-        inputNumero(numero)
+        nuovoNumero=input("Inserisci un numero: ")
+        inputNumero(nuovoNumero)
+        return inputNumero(nuovoNumero)'
+'''
+def inputNumero(numero):
+    try:
+        return int(numero)  
+    except ValueError:
+        print("Errore: Inserisci un numero valido!")
+        nuovo_input = input("Riprova: ")  
+        return inputNumero(nuovo_input)    

@@ -15,7 +15,8 @@ cur.execute('''
 create table EVENTO(
 id_evento integer primary key autoincrement,
 nome text,
-capienzaMassima integer
+capienzaMassima integer,
+id_sala integer
 )''')
 cur.execute('''
 create table PARTECIPANTE(
