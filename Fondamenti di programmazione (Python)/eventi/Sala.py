@@ -11,17 +11,15 @@ class Sala:
         print("Registrazione della sala avvenuta con successo")
         chiusura_connessione(conn,cur)
     def visualizza_sala(self):
-        conn,cur=aperturaConnessione()
-        cur.execute('''
-            select * from SALA where disponibilita="si"
-        ''')
-        if cur.fetchone() is None:
-            print("Nessuna sala disponibile aggiungi una sala prima")
-            chiusura_connessione(conn,cur)
+        conn, cur = aperturaConnessione()
+        cur.execute('''select * from SALA where disponibilita="si"''')
+        rows = cur.fetchall()  
+        if not rows:  
+            print("Nessuna sala disponibile, aggiungi una sala prima")
+            chiusura_connessione(conn, cur)
             return False
-        else:
-            print("Sale disponibili:")
-            for row in cur.fetchall():
-                print("ciao")
-                print(row[0],row[1],row[2])
-            chiusura_connessione(conn,cur)
+        print("Sale disponibili:")
+        for row in rows:
+            print(row[0], row[1], row[2])  
+        chiusura_connessione(conn, cur)
+        return True

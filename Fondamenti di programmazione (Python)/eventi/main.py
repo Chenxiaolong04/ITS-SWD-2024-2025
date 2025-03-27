@@ -27,6 +27,8 @@ while True:
             risultato=Sala().visualizza_sala()
             if risultato==False:
                 continue
+            conn,cur=aperturaConnessione()
+
             while True:
                 id_sala=input("Inserisci l'id della sala: ")
                 id_sala=inputNumero(id_sala)

@@ -14,15 +14,17 @@ class Evento:
         print("Registrazione dell'evento avvenuta con successo")
         chiusura_connessione(conn,cur)
     def visualizza_evento(self):
-        conn,cur=aperturaConnessione()
-        cur.execute('''
-            select * from EVENTO where capienzaMassima>0
-        ''')
-        print("Eventi disponibili:")
-        if(cur.fetchone() is None):
-            print("Nessun evento disponibile aggiungi un evento prima")
-            chiusura_connessione(conn,cur)
+        conn, cur = aperturaConnessione()
+        cur.execute('''select * from EVENTO where capienzaMassima>0''')
+        rows = cur.fetchall()
+        
+        if not rows:
+            print("Nessun evento disponibile, aggiungi un evento prima")
+            chiusura_connessione(conn, cur)
             return False
-        for row in cur.fetchall():
-            print(row[0],row[1],row[2],row[3])
-        chiusura_connessione(conn,cur)
+        
+        print("Eventi disponibili:")
+        for row in rows:
+            print(row[0], row[1], row[2], row[3])
+        chiusura_connessione(conn, cur)
+        return True
