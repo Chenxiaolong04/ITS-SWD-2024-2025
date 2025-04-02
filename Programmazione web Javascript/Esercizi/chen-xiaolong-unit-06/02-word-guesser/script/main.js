@@ -11,6 +11,10 @@ function guessLetter(letter){
         console.log(`You win the game`);
         return;
     }
+    if(maxAttempt==0){
+        console.log(`You lose the game`);
+        return;
+    }
     for(let i=0;i<word.length;i++){
         if(word[i].toUpperCase()==letter.toUpperCase()){
             guessWord[i]=word[i];
@@ -27,10 +31,9 @@ function guessLetter(letter){
         maxAttempt--;
         console.log(`Attempt left: ${maxAttempt}`);
         console.log(guessWord)
-        if(maxAttempt==0){
-            console.log(`You lose the game`);
-        }
+
     }
+
     if(guessWord.includes("_")==false){
         console.log(`You win the game`);
         return;
@@ -47,3 +50,4 @@ guessLetter('h');
 guessLetter('o');
 guessLetter('n');
 guessLetter('e');
+
