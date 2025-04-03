@@ -5,12 +5,10 @@
 let word=['S','M','A','R','T','P','H','O','N','E'];
 let guessWord=['_','_','_','_','_','_','_','_','_','_'];
 let maxAttempt=6;
+let letter=[];
 function guessLetter(letter){
     let flag=false;
-    if(guessWord.includes("_")==false){
-        console.log(`You win the game`);
-        return;
-    }
+
     if(maxAttempt==0){
         console.log(`You lose the game`);
         return;
@@ -34,6 +32,10 @@ function guessLetter(letter){
 
     }
 
+    if(guessWord.includes("_")==false){
+        console.log(`You win the game`);
+        return;
+    }
     if(guessWord.includes("_")==false){
         console.log(`You win the game`);
         return;
