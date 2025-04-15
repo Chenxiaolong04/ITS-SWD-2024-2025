@@ -1,0 +1,21 @@
+:root {
+  --primary-color: yellow;
+}
+p::first-letter{
+  color:red;
+  font-size: 30px;
+}
+.quote::first-line{
+  background-color: greenyellow;
+}
+ul::before{
+  content:"sono un element che precede la lista" ;
+  font-size: 12px;
+  color:orange;
+}
+li::before{
+  content: "»";
+}
+body{
+  background-color: var(--primary-color);
+}
