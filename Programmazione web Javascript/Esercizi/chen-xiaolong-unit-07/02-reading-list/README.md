@@ -1,29 +1,43 @@
-## 02-word-guesser
-Autor: Chen Xiaolong  
-Contact: xiao.chen@edu-its.it
-___
-### Exercise Requirements
+# 02-reading-list
+**Author**: Chen Xiaolong  
+**Contact**: xiao.chen@edu-its.it
 
-Create two arrays:
-○ one for the letters of the word (e.g. 'C', 'A', 'T')
-○ Another for the current guessed letters (start with '_', '_', '_' and add the correct letters to it).
-● Write a function called guessLetter that should:
-○ Take one parameter, a letter.
-○ Have a maximum number of guesses (e.g. 6)
-○ Check if the letter is in the word array.
-○ If the letter matches, add it in the correct position of the guessed array.
-○ Show the user the current guessed letters.
-○ Tell the user if they guessed a correct letter.
-○ Tell the user how many guesses remain.
-○ Tell the user if they won or lost the game.
+## Exercise requirements
+● Create an array of objects, where each object describes a book and has
+properties for the title (a string), author (a string), and alreadyRead (a
+boolean indicating if you read it yet).
 
-### Approach to Solution
+● Iterate through the array of books. For each book, log the book title and
+book author like so: "The Hobbit by J.R.R. Tolkien".
 
-- Define the secret word as an array of characters.
-- Create a placeholder array (`_`) for unguessed letters.
-- Keep track of already tried letters.
-- Implement the `guessLetter(letter)` function:
-  - Check if the letter was already guessed.
-  - Verify if it's in the word.
-  - Update the game state (attempts, revealed letters).
-  - Check for win or loss conditions.
+● Now use an if/else statement to change the output depending on whether
+you read it yet or not. If you read it, log a string like 'You already read "The
+Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read
+"The Lord of the Rings" by J.R.R. Tolkien.'
+
+
+## Problem Description
+The goal of this project is to manage a list of books and their reading status. The properties of each book include:
+- **title**: The name of the book.
+- **author**: The author of the book.
+- **alreadyRead**: A boolean indicating if the book has been read or not.
+
+The program should:
+- Iterate through the list of books and print a message indicating whether the book has been read or still needs to be read.
+
+## Approach to Solution
+1. **Data Representation**:
+   - The books are represented as an array of objects. Each object has the properties `title`, `author`, and `alreadyRead` to store information about a book's title, the author, and its reading status.
+
+2. **Iterating Through Books**:
+   - A `for...in` loop is used to iterate over each book in the `books` array.
+   - For each book, a check is made on the `alreadyRead` property.
+     - If `alreadyRead` is `true`, the program prints a message saying the book has been read.
+     - If `alreadyRead` is `false`, the program prints a message saying the book still needs to be read.
+
+3. **Logging Information**:
+   - The program uses `console.log()` to display whether the book has been read or needs to be read, displaying both the book's title and author.
+
+4. **JSDoc Comments**:
+   - The code is documented using JSDoc comments to explain the purpose and type of each variable and function. This ensures the code is clear and maintainable.
+

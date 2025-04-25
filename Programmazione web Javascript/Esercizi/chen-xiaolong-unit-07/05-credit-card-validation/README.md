@@ -1,29 +1,30 @@
-## 02-word-guesser
-Autor: Chen Xiaolong  
+# 05-credit-card-validation
+
+Author: Chen Xiaolong  
 Contact: xiao.chen@edu-its.it
-___
-### Exercise Requirements
 
-Create two arrays:
-○ one for the letters of the word (e.g. 'C', 'A', 'T')
-○ Another for the current guessed letters (start with '_', '_', '_' and add the correct letters to it).
-● Write a function called guessLetter that should:
-○ Take one parameter, a letter.
-○ Have a maximum number of guesses (e.g. 6)
-○ Check if the letter is in the word array.
-○ If the letter matches, add it in the correct position of the guessed array.
-○ Show the user the current guessed letters.
-○ Tell the user if they guessed a correct letter.
-○ Tell the user how many guesses remain.
-○ Tell the user if they won or lost the game.
+## Exercise Requirements
 
-### Approach to Solution
+Create a function `validateCreditCard` to validate a credit card number based on the following criteria:
 
-- Define the secret word as an array of characters.
-- Create a placeholder array (`_`) for unguessed letters.
-- Keep track of already tried letters.
-- Implement the `guessLetter(letter)` function:
-  - Check if the letter was already guessed.
-  - Verify if it's in the word.
-  - Update the game state (attempts, revealed letters).
-  - Check for win or loss conditions.
+1. The card number length must be exactly 16 characters.
+2. The card number must consist only of digits (0-9).
+3. The card number must not be composed of the same digit repeated.
+4. The last digit of the card number must be even.
+5. The sum of the digits must be greater than 16.
+
+## Approach to Solution
+
+### Steps:
+
+1. **Clean the Input**: Remove dashes from the credit card number to ensure uniformity.
+2. **Check Length**: Ensure that the length of the cleaned card number is exactly 16.
+3. **Check for Non-Digit Characters**: Ensure that every character in the card number is a digit (0-9).
+4. **Check for Repeated Digits**: Ensure that at least two different digits are present in the card number.
+5. **Check Last Digit**: Ensure that the last digit of the card number is even.
+6. **Check Sum**: Ensure that the sum of all the digits in the card number is greater than 16.
+
+### Function:
+
+The function `validateCreditCard(cardNumber)` is implemented to perform the above checks and return a result.
+
