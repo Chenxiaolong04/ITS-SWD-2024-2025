@@ -1,0 +1,47 @@
+
+
+#box1,#box2,#box3,#box4,#box5{
+  width: 100px;
+  height: 100px;
+  border:1px black solid;
+
+}
+#box{
+  display: flex;
+}
+#img1{
+  width: 100px;
+  height: 100px;
+  border:1px rgb(19, 218, 168) solid;
+  object-fit: fill;
+
+}
+#img2{
+  width: 100px;
+  height: 100px;
+  border:1px rgb(19, 218, 168) solid;
+  object-fit: contain;
+
+}
+#img3{
+  width: 100px;
+  height: 100px;
+  border:1px rgb(19, 218, 168) solid;
+  object-fit: cover;
+
+}
+#img4{
+  width: 100px;
+  height: 100px;
+  border:1px rgb(19, 218, 168) solid;
+  object-fit: none;
+
+}
+#img5{
+  width: 100px;
+  height: 100px;
+  border:1px rgb(19, 218, 168) solid;
+  object-fit: scale-down;
+
+}
+

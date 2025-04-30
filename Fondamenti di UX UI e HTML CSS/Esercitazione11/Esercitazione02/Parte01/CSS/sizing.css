@@ -1,0 +1,34 @@
+body{
+    font-size: 14px;
+}
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    color:#0000ff;
+}
+#box2{
+    width: 10%;
+    height: 10em;
+    background-color: lightblue;
+    color:#0000ff;
+}
+#box2 p::first-letter{
+    color: rgb(255,0,0);
+}
+#box3{
+    font-size: 16px;
+    background-color: rgba(153, 58, 58, 0.6);
+}
+#box4{
+    width: 30%;
+    height: 30%;
+    background-color: yellow;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 300px;
+}
+#box3 p::first-line{
+    font-size: 1.5em;
+}

@@ -1,0 +1,56 @@
+#box1 {
+    border: 1px black solid;
+    width: 100px;
+    height: 100px;
+    animation: bounce 1s infinite;
+}
+
+#box2 {
+    border: 1px black solid;
+    width: 100px;
+    height: 100px;
+    animation: rotate 2s linear;
+    animation-iteration-count: 2;
+}
+#box3 {
+    border: 1px black solid;
+    width: 100px;
+    height: 100px;
+
+}
+#box3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(177, 115, 1);
+    animation: animazioneC 2s;
+    animation-iteration-count: 5;
+
+}
+
+
+
+@keyframes bounce {
+    0%   { transform: translate(0px, -80px); }
+    50%  { transform: translate(0px, 0px);   }
+    100% { transform: translate(0px, -80px); }
+}
+
+@keyframes rotate {
+    0%   { transform: rotate(0deg); }
+    
+    100% { transform: rotate(180deg); }
+}
+@keyframes animazioneC {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0.8;
+        transform: scale(1.4);
+    }
+}

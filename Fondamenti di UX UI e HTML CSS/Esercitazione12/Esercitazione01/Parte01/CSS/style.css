@@ -1,0 +1,36 @@
+header{
+  background-color: aquamarine;
+  padding: 30px;
+  text-align: center;
+  border-radius: 30px;
+  border:black solid 1px;
+  margin-bottom: 30px;
+}
+footer{
+  background-color: rgb(19, 68, 52);
+  padding: 30px;
+  text-align: center;
+  color: aliceblue;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+
+}
+footer:hover{
+  background-color: azure;
+  color: black;
+  font-size: 30pt;
+  transition: 1000ms;
+}
+span{
+  color: white;
+  background-color: teal;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 5px;
+  border: 1px solid darkcyan;
+  margin-top: 300px;
+}
+img{
+  margin-top:30px;
+}

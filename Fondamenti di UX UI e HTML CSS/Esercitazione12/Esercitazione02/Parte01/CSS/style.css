@@ -1,0 +1,62 @@
+#lego{
+  width: 50px;
+  height: 50px;
+  margin-left: 1%;
+  border-radius: 10px;
+}
+li:hover{
+  border-bottom: 1px black solid;
+  transition: 1000ms;
+}
+ul{
+  display: flex;
+  list-style-type:none;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 3%;
+}
+li{
+  padding: 3%;
+
+}
+#lego{
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+header{
+  background-color: aquamarine;
+  border-radius: 30px;
+  border:black solid 1px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+footer{
+  background-color: rgb(19, 68, 52);
+  padding: 30px;
+  text-align: center;
+  color: aliceblue;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+
+}
+footer:hover{
+  background-color: azure;
+  color: black;
+  font-size: 30pt;
+  transition: 1000ms;
+}
+span{
+  color: white;
+  background-color: teal;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 5px;
+  border: 1px solid darkcyan;
+  margin-top: 300px;
+}
+img{
+  margin-top:30px;
+}
