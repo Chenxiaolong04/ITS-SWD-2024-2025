@@ -1,4 +1,4 @@
-# My Book List
+# 02-book-list
 
 This project dynamically generates a list of books and displays them with their titles, authors, and cover images. It also changes the appearance of the books based on whether they have been read or not.
 

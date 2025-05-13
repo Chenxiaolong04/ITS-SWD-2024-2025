@@ -1,0 +1,15 @@
+/* Styling for books that have been read */
+.read {
+  border: 1px solid green; /* Green border */
+  background-color: #d4ffd4;  /* Light green background */
+  color: green;               /* Green text */
+  font-weight: bold;          /* Bold text */
+}
+
+/* Styling for books that have not been read */
+.not-read {
+  border: 1px solid red;   /* Red border */
+  background-color: #ffd4d4;  /* Light red background */
+  color: red;                 /* Red text */
+  font-style: italic;         /* Italic text */
+}
